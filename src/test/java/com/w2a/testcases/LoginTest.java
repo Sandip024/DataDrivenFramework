@@ -12,9 +12,10 @@ public class LoginTest extends TestBase{
 		
 		driver.findElement(By.xpath(OR.getProperty("bmlBtn"))).click();
 		Thread.sleep(2000);
+		log.info("clicked on Bank Manager Login button");
 		
 	}
 	//@Test
-	//public void 
+	//public void
 	
 }

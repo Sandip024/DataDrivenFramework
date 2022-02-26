@@ -1,0 +1,4 @@
+DEBUG   2022-02-27 01:19:33,299 [main] com.w2a.base.TestBase  - config file loaded
+DEBUG   2022-02-27 01:19:33,301 [main] com.w2a.base.TestBase  - OR file loaded
+INFO    2022-02-27 01:19:34,459 [main] com.w2a.base.TestBase  - Launching Chrome driver
+DEBUG   2022-02-27 01:19:37,087 [main] com.w2a.base.TestBase  - clicked on Bank Manager Login button

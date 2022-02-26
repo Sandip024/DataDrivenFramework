@@ -1,14 +1,12 @@
 package com.w2a.rough;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
 public class TestProperties {
 	
 	public static void main(String[] args) throws IOException {
-
 
 		System.out.println(System.getProperty("user.dir"));
 
@@ -22,9 +20,9 @@ public class TestProperties {
 		Properties OR = new Properties();
 
 		FileInputStream fis2 = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\resources\\properties\\OR.properties");
-		config.load(fis2);
+		OR.load(fis2);
 
-		System.out.println(config.getProperty("bmlBtn"));
+		System.out.println(OR.getProperty("bmlBtn"));
 
 	}
 
