@@ -13,7 +13,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
+
+import com.w2a.utilities.ExcelReader;
 
 public class TestBase {
 
@@ -37,6 +40,8 @@ public class TestBase {
 	public static FileInputStream fis;
 	
 	public Logger log = Logger.getLogger(TestBase.class);
+	public static ExcelReader excel =  new ExcelReader(System.getProperty("user.dir")+"\\src\\test\\resources\\excel\\testdata.xlsx");
+	public static WebDriverWait wait;
 
 	@BeforeSuite
 	public void setUP() throws IOException {
@@ -77,7 +82,8 @@ public class TestBase {
 			log.info("Opened Test Site Url");
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")), TimeUnit.SECONDS);
-
+			wait = new WebDriverWait(driver, 5);
+			
 			}
 
 	}
