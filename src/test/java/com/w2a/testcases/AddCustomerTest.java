@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -16,25 +17,21 @@ public class AddCustomerTest extends TestBase {
 	public void addCustomer(String firstName, String lastName, String postCode, String alertText) throws InterruptedException {
 		
 		driver.findElement(By.xpath(OR.getProperty("addCustBtn"))).click();
-		Thread.sleep(2000);
 		driver.findElement(By.xpath(OR.getProperty("firstname"))).sendKeys(firstName);
-		Thread.sleep(2000);
 		driver.findElement(By.xpath(OR.getProperty("lastname"))).sendKeys(lastName);
-		Thread.sleep(2000);
 		driver.findElement(By.xpath(OR.getProperty("postcode"))).sendKeys(postCode);
-		Thread.sleep(2000);
 		driver.findElement(By.xpath(OR.getProperty("addbtn"))).click();
-		Thread.sleep(2000);
 		
 		String alertMessage = driver.switchTo().alert().getText();
 		Assert.assertTrue(alertMessage.contains(alertText));
 		//driver.switchTo().alert().dismiss();
 		
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-		Assert.assertTrue(alert.getText().contains(alertMessage));
+		Assert.assertTrue(alert.getText().contains(alertMessage), "Customer added successfully");
 		alert.accept();
 		
-		
+		Assert.fail("Customer not added successfully");
+	
 		
 	}
 	
