@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Capturing Screenshot: <br/>]]>
+      <![CDATA[Click to see screenshot: <br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg>Screenshot</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br/>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg><img src=Mon_Feb_28_17_24_36_IST_2022.jpg height=400 width=400 /></a>]]>
-    </line>
-    <line>
-      <![CDATA[Capturing Screenshot: <br/>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_43_IST_2022.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg><img src=Mon_Feb_28_17_24_37_IST_2022.jpg height=400 width=400 /></a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_43_IST_2022.jpg><img src=Mon_Feb_28_19_20_43_IST_2022.jpg height=300 width=300 /></a>]]>
     </line>
     <line>
-      <![CDATA[Capturing Screenshot: <br/>]]>
+      <![CDATA[Click to see screenshot: <br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg>Screenshot</a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_44_IST_2022.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg><img src=Mon_Feb_28_17_24_38_IST_2022.jpg height=400 width=400 /></a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_44_IST_2022.jpg><img src=Mon_Feb_28_19_20_44_IST_2022.jpg height=300 width=300 /></a>]]>
+    </line>
+    <line>
+      <![CDATA[Click to see screenshot: <br/>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_45_IST_2022.jpg>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br/>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_45_IST_2022.jpg><img src=Mon_Feb_28_19_20_45_IST_2022.jpg height=300 width=300 /></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-28T11:54:35Z" name="Data Driven Basics" finished-at="2022-02-28T11:54:38Z" duration-ms="3472">
+  <suite started-at="2022-02-28T13:50:42Z" name="Data Driven Basics" finished-at="2022-02-28T13:50:46Z" duration-ms="3883">
     <groups>
     </groups>
-    <test started-at="2022-02-28T11:54:35Z" name="Bank Manager Login Test" finished-at="2022-02-28T11:54:36Z" duration-ms="1424">
+    <test started-at="2022-02-28T13:50:42Z" name="Bank Manager Login Test" finished-at="2022-02-28T13:50:44Z" duration-ms="1894">
       <class name="com.w2a.testcases.BankManagerLoginTest">
-        <test-method signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@6dd7b5a3]" started-at="2022-02-28T11:54:35Z" name="loginAsBankManager" finished-at="2022-02-28T11:54:36Z" duration-ms="1122" status="FAIL">
+        <test-method signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@60129b9a]" started-at="2022-02-28T13:50:42Z" name="loginAsBankManager" finished-at="2022-02-28T13:50:43Z" duration-ms="1131" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Login not succesfull]]>
@@ -85,28 +85,28 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Capturing Screenshot: <br/>]]>
+              <![CDATA[Click to see screenshot: <br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_43_IST_2022.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg><img src=Mon_Feb_28_17_24_36_IST_2022.jpg height=400 width=400 /></a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_43_IST_2022.jpg><img src=Mon_Feb_28_19_20_43_IST_2022.jpg height=300 width=300 /></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test started-at="2022-02-28T11:54:36Z" name="Add Customer Test" finished-at="2022-02-28T11:54:38Z" duration-ms="2021">
+    <test started-at="2022-02-28T13:50:44Z" name="Add Customer Test" finished-at="2022-02-28T13:50:46Z" duration-ms="1914">
       <class name="com.w2a.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:32Z" name="setUP" finished-at="2022-02-28T11:54:35Z" duration-ms="2337" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.w2a.testcases.AddCustomerTest@5f9be66c]" started-at="2022-02-28T13:50:39Z" name="setUP" finished-at="2022-02-28T13:50:42Z" duration-ms="2170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:36Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T11:54:37Z" duration-ms="874" status="FAIL">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@5f9be66c]" started-at="2022-02-28T13:50:44Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T13:50:44Z" duration-ms="648" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -170,20 +170,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Capturing Screenshot: <br/>]]>
+              <![CDATA[Click to see screenshot: <br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_44_IST_2022.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg><img src=Mon_Feb_28_17_24_37_IST_2022.jpg height=400 width=400 /></a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_44_IST_2022.jpg><img src=Mon_Feb_28_19_20_44_IST_2022.jpg height=300 width=300 /></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:38Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T11:54:38Z" duration-ms="405" status="FAIL">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@5f9be66c]" started-at="2022-02-28T13:50:45Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T13:50:45Z" duration-ms="347" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -247,20 +247,20 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[Capturing Screenshot: <br/>]]>
+              <![CDATA[Click to see screenshot: <br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg>Screenshot</a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_45_IST_2022.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg><img src=Mon_Feb_28_17_24_38_IST_2022.jpg height=400 width=400 /></a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_19_20_45_IST_2022.jpg><img src=Mon_Feb_28_19_20_45_IST_2022.jpg height=300 width=300 /></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:38Z" name="tearDown" finished-at="2022-02-28T11:54:39Z" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@5f9be66c]" started-at="2022-02-28T13:50:46Z" name="tearDown" finished-at="2022-02-28T13:50:46Z" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
