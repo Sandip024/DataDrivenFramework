@@ -5,45 +5,45 @@
       <![CDATA[Capturing Screenshot: <br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png">Screenshot</a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png"><img src="C:\Users\sandip\Desktop\RAM_upgrade.png" height=400 width=400 /></a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg><img src=Mon_Feb_28_17_24_36_IST_2022.jpg height=400 width=400 /></a>]]>
     </line>
     <line>
       <![CDATA[Capturing Screenshot: <br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png">Screenshot</a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png"><img src="C:\Users\sandip\Desktop\RAM_upgrade.png" height=400 width=400 /></a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg><img src=Mon_Feb_28_17_24_37_IST_2022.jpg height=400 width=400 /></a>]]>
     </line>
     <line>
       <![CDATA[Capturing Screenshot: <br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png">Screenshot</a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg>Screenshot</a>]]>
     </line>
     <line>
       <![CDATA[<br/>]]>
     </line>
     <line>
-      <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png"><img src="C:\Users\sandip\Desktop\RAM_upgrade.png" height=400 width=400 /></a>]]>
+      <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg><img src=Mon_Feb_28_17_24_38_IST_2022.jpg height=400 width=400 /></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-02-28T09:17:13Z" name="Data Driven Basics" finished-at="2022-02-28T09:17:15Z" duration-ms="1746">
+  <suite started-at="2022-02-28T11:54:35Z" name="Data Driven Basics" finished-at="2022-02-28T11:54:38Z" duration-ms="3472">
     <groups>
     </groups>
-    <test started-at="2022-02-28T09:17:13Z" name="Bank Manager Login Test" finished-at="2022-02-28T09:17:14Z" duration-ms="1087">
+    <test started-at="2022-02-28T11:54:35Z" name="Bank Manager Login Test" finished-at="2022-02-28T11:54:36Z" duration-ms="1424">
       <class name="com.w2a.testcases.BankManagerLoginTest">
-        <test-method signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@6dd7b5a3]" started-at="2022-02-28T09:17:13Z" name="loginAsBankManager" finished-at="2022-02-28T09:17:14Z" duration-ms="1069" status="FAIL">
+        <test-method signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@6dd7b5a3]" started-at="2022-02-28T11:54:35Z" name="loginAsBankManager" finished-at="2022-02-28T11:54:36Z" duration-ms="1122" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Login not succesfull]]>
@@ -88,25 +88,25 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
               <![CDATA[Capturing Screenshot: <br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png">Screenshot</a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png"><img src="C:\Users\sandip\Desktop\RAM_upgrade.png" height=400 width=400 /></a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_36_IST_2022.jpg><img src=Mon_Feb_28_17_24_36_IST_2022.jpg height=400 width=400 /></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test started-at="2022-02-28T09:17:14Z" name="Add Customer Test" finished-at="2022-02-28T09:17:15Z" duration-ms="640">
+    <test started-at="2022-02-28T11:54:36Z" name="Add Customer Test" finished-at="2022-02-28T11:54:38Z" duration-ms="2021">
       <class name="com.w2a.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T09:17:11Z" name="setUP" finished-at="2022-02-28T09:17:13Z" duration-ms="1664" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:32Z" name="setUP" finished-at="2022-02-28T11:54:35Z" duration-ms="2337" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T09:17:14Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T09:17:14Z" duration-ms="334" status="FAIL">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:36Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T11:54:37Z" duration-ms="874" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -173,17 +173,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
               <![CDATA[Capturing Screenshot: <br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png">Screenshot</a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png"><img src="C:\Users\sandip\Desktop\RAM_upgrade.png" height=400 width=400 /></a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_37_IST_2022.jpg><img src=Mon_Feb_28_17_24_37_IST_2022.jpg height=400 width=400 /></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T09:17:14Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T09:17:15Z" duration-ms="289" status="FAIL">
+        <test-method signature="addCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:38Z" name="addCustomer" data-provider="getData" finished-at="2022-02-28T11:54:38Z" duration-ms="405" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -250,17 +250,17 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
               <![CDATA[Capturing Screenshot: <br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png">Screenshot</a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg>Screenshot</a>]]>
             </line>
             <line>
               <![CDATA[<br/>]]>
             </line>
             <line>
-              <![CDATA[<a target="blank" href="C:\Users\sandip\Desktop\RAM_upgrade.png"><img src="C:\Users\sandip\Desktop\RAM_upgrade.png" height=400 width=400 /></a>]]>
+              <![CDATA[<a target="blank" href=Mon_Feb_28_17_24_38_IST_2022.jpg><img src=Mon_Feb_28_17_24_38_IST_2022.jpg height=400 width=400 /></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- addCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T09:17:15Z" name="tearDown" finished-at="2022-02-28T09:17:15Z" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.w2a.testcases.AddCustomerTest@7a3793c7]" started-at="2022-02-28T11:54:38Z" name="tearDown" finished-at="2022-02-28T11:54:39Z" duration-ms="252" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

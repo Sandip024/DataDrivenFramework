@@ -4,9 +4,9 @@
            failures="2"
            errors="0"
            skipped="0"
-           time="0.623">
+           time="1.279">
   <properties />
-            <testcase name="addCustomer" time="0.334" classname="com.w2a.testcases.AddCustomerTest">
+            <testcase name="addCustomer" time="0.874" classname="com.w2a.testcases.AddCustomerTest">
                 <failure type="java.lang.AssertionError"
                   message="Customer not added successfully"
               >
@@ -45,7 +45,7 @@
       </failure>
 
           </testcase>
-            <testcase name="addCustomer" time="0.289" classname="com.w2a.testcases.AddCustomerTest">
+            <testcase name="addCustomer" time="0.405" classname="com.w2a.testcases.AddCustomerTest">
                 <failure type="java.lang.AssertionError"
                   message="Customer not added successfully"
               >
