@@ -97,13 +97,53 @@ public class TestBase {
 	}
 
 	public void click(String locator) {
+		if(locator.endsWith("XPATH")) {
 		driver.findElement(By.xpath(OR.getProperty(locator))).click();
-		test.log(LogStatus.INFO, "Clicking on locator: "+locator);
+		test.log(LogStatus.INFO, "Clicking on locator: ( "+locator+" ).");
+		}
+		if(locator.endsWith("CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "Clicking on locator: ( "+locator+" ).");
+		}
+		if(locator.endsWith("ID")) {
+			driver.findElement(By.id(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "Clicking on locator: ( "+locator+" ).");
+		}
+		if(locator.endsWith("NAME")) {
+			driver.findElement(By.name(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "Clicking on locator: ( "+locator+" ).");
+		}
+		if(locator.endsWith("CLASSNAME")) {
+			driver.findElement(By.className(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "Clicking on locator: ( "+locator+" ).");
+		}
 	}
 
 	public void type(String locator, String value) {
-		driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
-		test.log(LogStatus.INFO, "Typing in locator: "+locator+"and entered value as: "+value);
+		if(locator.endsWith("XPATH")) {
+			driver.findElement(By.xpath(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "Typing in locator: ( "+locator+" ) and entered value as: ( "+value+" ).");
+		}
+		if(locator.endsWith("CSS")) {
+			driver.findElement(By.cssSelector(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "Typing in locator: ( "+locator+" ) and entered value as: ( "+value+" ).");
+		}
+		if(locator.endsWith("ID")) {
+			driver.findElement(By.id(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "Typing in locator: ( "+locator+" ) and entered value as: ( "+value+" ).");
+		}
+		if(locator.endsWith("NAME")) {
+			driver.findElement(By.name(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "Typing in locator: ( "+locator+" ) and entered value as: ( "+value+" ).");
+		}
+		if(locator.endsWith("CLASSNAME")) {
+			driver.findElement(By.className(OR.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO, "Typing in locator: ( "+locator+" ) and entered value as: ( "+value+" ).");
+		}
+		
+		
+		
+
 	}
 
 
