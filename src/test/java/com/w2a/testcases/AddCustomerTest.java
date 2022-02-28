@@ -16,12 +16,18 @@ public class AddCustomerTest extends TestBase {
 	@Test(dataProvider="getData")
 	public void addCustomer(String firstName, String lastName, String postCode, String alertText) throws InterruptedException {
 		
+		click("addCustBtn");
+		type("firstname", firstName);
+		type("lastname", lastName);
+		type("postcode", postCode);
+		click("addbtn");
+		/*
 		driver.findElement(By.xpath(OR.getProperty("addCustBtn"))).click();
 		driver.findElement(By.xpath(OR.getProperty("firstname"))).sendKeys(firstName);
 		driver.findElement(By.xpath(OR.getProperty("lastname"))).sendKeys(lastName);
 		driver.findElement(By.xpath(OR.getProperty("postcode"))).sendKeys(postCode);
 		driver.findElement(By.xpath(OR.getProperty("addbtn"))).click();
-		
+		*/
 		String alertMessage = driver.switchTo().alert().getText();
 		Assert.assertTrue(alertMessage.contains(alertText));
 		//driver.switchTo().alert().dismiss();

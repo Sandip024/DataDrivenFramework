@@ -11,8 +11,9 @@ public class BankManagerLoginTest extends TestBase{
 	
 	@Test
 	public void loginAsBankManager() throws InterruptedException {
-			
-		driver.findElement(By.xpath(OR.getProperty("bmlBtn"))).click();
+		
+		click("bmlBtn");
+
 		Thread.sleep(1000);
 		log.info("clicked on Bank Manager Login button");
 		
