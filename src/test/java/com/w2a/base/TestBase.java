@@ -53,6 +53,8 @@ public class TestBase {
 
 	public ExtentReports rep = ExtentManager.getInstance();
 	public static ExtentTest test;
+	
+	public static String browser;
 
 	@BeforeSuite
 	public void setUP() throws IOException {
@@ -67,6 +69,16 @@ public class TestBase {
 		OR.load(fis);
 		log.debug("OR file loaded");
 
+		
+		if(System.getenv("browser")!=null && !System.getenv().isEmpty()) {
+			
+			browser = System.getenv("browser");
+		}else {
+			browser = config.getProperty("browser");
+		}
+		
+		config.setProperty("browser", browser);
+		
 		if(driver == null) 
 		{
 

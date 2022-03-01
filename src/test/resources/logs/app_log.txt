@@ -1,20 +1,20 @@
-DEBUG   2022-03-01 21:16:53,798 [main] com.w2a.base.TestBase  - config file loaded
-DEBUG   2022-03-01 21:16:53,814 [main] com.w2a.base.TestBase  - OR file loaded
-INFO    2022-03-01 21:16:55,344 [main] com.w2a.base.TestBase  - Launching Chrome driver
-INFO    2022-03-01 21:16:55,930 [main] com.w2a.base.TestBase  - Opened Test Site Url
-INFO    2022-03-01 21:16:58,571 [main] com.w2a.base.TestBase  - clicked on Bank Manager Login button
-DEBUG   2022-03-01 21:16:58,641 [main] freemarker.cache  - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-DEBUG   2022-03-01 21:16:58,641 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-DEBUG   2022-03-01 21:16:58,641 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-DEBUG   2022-03-01 21:16:58,641 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-DEBUG   2022-03-01 21:16:58,641 [main] freemarker.cache  - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/sandip/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-DEBUG   2022-03-01 21:17:00,888 [main] freemarker.cache  - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-DEBUG   2022-03-01 21:17:00,888 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-DEBUG   2022-03-01 21:17:00,888 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-DEBUG   2022-03-01 21:17:00,888 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-DEBUG   2022-03-01 21:17:00,888 [main] freemarker.cache  - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/sandip/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-DEBUG   2022-03-01 21:17:00,968 [main] freemarker.cache  - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-DEBUG   2022-03-01 21:17:00,968 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-DEBUG   2022-03-01 21:17:00,968 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-DEBUG   2022-03-01 21:17:00,968 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-DEBUG   2022-03-01 21:17:00,968 [main] freemarker.cache  - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/sandip/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+DEBUG   2022-03-02 01:43:56,878 [main] com.w2a.base.TestBase  - config file loaded
+DEBUG   2022-03-02 01:43:56,879 [main] com.w2a.base.TestBase  - OR file loaded
+INFO    2022-03-02 01:43:58,478 [main] com.w2a.base.TestBase  - Launching Edge driver
+INFO    2022-03-02 01:43:58,885 [main] com.w2a.base.TestBase  - Opened Test Site Url
+INFO    2022-03-02 01:44:01,554 [main] com.w2a.base.TestBase  - clicked on Bank Manager Login button
+DEBUG   2022-03-02 01:44:01,641 [main] freemarker.cache  - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG   2022-03-02 01:44:01,643 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+DEBUG   2022-03-02 01:44:01,645 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+DEBUG   2022-03-02 01:44:01,647 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+DEBUG   2022-03-02 01:44:01,647 [main] freemarker.cache  - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/sandip/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+DEBUG   2022-03-02 01:44:04,127 [main] freemarker.cache  - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG   2022-03-02 01:44:04,128 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+DEBUG   2022-03-02 01:44:04,133 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+DEBUG   2022-03-02 01:44:04,134 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+DEBUG   2022-03-02 01:44:04,134 [main] freemarker.cache  - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/sandip/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+DEBUG   2022-03-02 01:44:04,230 [main] freemarker.cache  - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
+DEBUG   2022-03-02 01:44:04,231 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
+DEBUG   2022-03-02 01:44:04,231 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+DEBUG   2022-03-02 01:44:04,232 [main] freemarker.cache  - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+DEBUG   2022-03-02 01:44:04,232 [main] freemarker.cache  - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/sandip/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
