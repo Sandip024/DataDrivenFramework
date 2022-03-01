@@ -14,7 +14,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -22,6 +24,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.utilities.ExcelReader;
 import com.w2a.utilities.ExtentManager;
+import com.w2a.utilities.TestUtil;
 
 public class TestBase {
 
@@ -98,8 +101,8 @@ public class TestBase {
 
 	public void click(String locator) {
 		if(locator.endsWith("XPATH")) {
-		driver.findElement(By.xpath(OR.getProperty(locator))).click();
-		test.log(LogStatus.INFO, "Clicking on locator: ( "+locator+" ).");
+			driver.findElement(By.xpath(OR.getProperty(locator))).click();
+			test.log(LogStatus.INFO, "Clicking on locator: ( "+locator+" ).");
 		}
 		if(locator.endsWith("CSS")) {
 			driver.findElement(By.cssSelector(OR.getProperty(locator))).click();
@@ -140,13 +143,33 @@ public class TestBase {
 			driver.findElement(By.className(OR.getProperty(locator))).sendKeys(value);
 			test.log(LogStatus.INFO, "Typing in locator: ( "+locator+" ) and entered value as: ( "+value+" ).");
 		}
-		
-		
-		
-
 	}
 
+	static WebElement dropdown;
 
+	public static void select(String locator, String value) {
+
+		if(locator.endsWith("XPATH")) {
+			dropdown = driver.findElement(By.xpath(OR.getProperty(locator)));
+		}
+		if(locator.endsWith("CSS")) {
+			dropdown = driver.findElement(By.cssSelector(OR.getProperty(locator)));
+		}
+		if(locator.endsWith("ID")) {
+			dropdown = driver.findElement(By.id(OR.getProperty(locator)));
+		}
+		if(locator.endsWith("NAME")) {
+			dropdown = driver.findElement(By.name(OR.getProperty(locator)));
+		}
+		if(locator.endsWith("CLASSNAME")) {
+			dropdown = driver.findElement(By.className(OR.getProperty(locator)));
+		}
+		
+		Select select = new Select(dropdown);
+		select.selectByVisibleText(value);
+		test.log(LogStatus.INFO, "Selecting from dropdown: ( "+locator+" ) value as: ( "+value+" ).");
+
+	}
 
 	public boolean isElementPresent(By by) {
 
@@ -157,6 +180,19 @@ public class TestBase {
 		catch(NoSuchElementException e){
 			return false;
 		}
+	}
+
+	public static void verifyEquals(String actual, String expected) throws IOException{
+
+		try {
+			Assert.assertEquals(actual, expected);
+		}catch(Throwable t){
+
+			TestUtil.captureScreenShot();
+			TestBase.test.log(LogStatus.FAIL, "VERIFICATION FAILED WITH EXCEPTION: "+t.getMessage());
+			TestBase.test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenShotName));	
+		}
+
 	}
 
 	@AfterSuite

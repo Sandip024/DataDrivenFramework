@@ -4,15 +4,15 @@
            failures="2"
            errors="0"
            skipped="0"
-           time="0.648">
+           time="1.017">
   <properties />
-            <testcase name="addCustomer" time="0.201" classname="com.w2a.testcases.AddCustomerTest">
+            <testcase name="addCustomerTest" time="0.589" classname="com.w2a.testcases.AddCustomerTest">
                 <failure type="java.lang.AssertionError"
                   message="Customer not added successfully"
               >
 <![CDATA[java.lang.AssertionError: Customer not added successfully
   org.testng.Assert.fail(Assert.java:96)
-  com.w2a.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:33)
+  com.w2a.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:40)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -42,13 +42,13 @@
       </failure>
 
           </testcase>
-            <testcase name="addCustomer" time="0.447" classname="com.w2a.testcases.AddCustomerTest">
+            <testcase name="addCustomerTest" time="0.428" classname="com.w2a.testcases.AddCustomerTest">
                 <failure type="java.lang.AssertionError"
                   message="Customer not added successfully"
               >
 <![CDATA[java.lang.AssertionError: Customer not added successfully
   org.testng.Assert.fail(Assert.java:96)
-  com.w2a.testcases.AddCustomerTest.addCustomer(AddCustomerTest.java:33)
+  com.w2a.testcases.AddCustomerTest.addCustomerTest(AddCustomerTest.java:40)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

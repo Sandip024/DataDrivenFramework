@@ -6,6 +6,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.SkipException;
 
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.base.TestBase;
@@ -15,7 +16,10 @@ public class CustomListeners extends TestBase implements ITestListener{
 
 	public void onTestStart(ITestResult result) {
 		
-		//test = rep.startTest(result.getName().toUpperCase());
+		if(!TestUtil.isTestRunnable(result.getName(), excel)) {
+			throw new SkipException("Skipping the test: "+ result.getName()+" as runmode is set to NO");
+		}
+
 	}
 
 	public void onTestSuccess(ITestResult result) {
@@ -30,21 +34,12 @@ public class CustomListeners extends TestBase implements ITestListener{
 		
 		TestBase.test.log(LogStatus.FAIL, result.getName().toUpperCase()+"FAILED WITH EXCEPTION"+result.getThrowable());
 		TestBase.test.log(LogStatus.FAIL, test.addScreenCapture(TestUtil.screenShotName));	
-		rep.endTest(test);
-		rep.flush();
-		
-		
-		System.setProperty("org.uncommons.reportng.escape-output", "false");
-		Reporter.log("Click to see screenshot: <br/>");
-		Reporter.log("<a target=\"blank\" href="+TestUtil.screenShotName+">Screenshot</a>");
-		Reporter.log("<br/>");
-		Reporter.log("<a target=\"blank\" href="+TestUtil.screenShotName+"><img src="+TestUtil.screenShotName+" height=300 width=300 /></a>");
-		
+
 	}
 
 	public void onTestSkipped(ITestResult result) {
 		
-		
+		test.log(LogStatus.SKIP, result.getName().toUpperCase()+" Skipped the test as runmode is NO");
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -54,7 +49,7 @@ public class CustomListeners extends TestBase implements ITestListener{
 
 	public void onStart(ITestContext context) {
 		test = rep.startTest(context.getName().toUpperCase());
-		
+
 	}
 
 	public void onFinish(ITestContext context) {

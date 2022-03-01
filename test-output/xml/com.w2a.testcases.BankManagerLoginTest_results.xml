@@ -4,15 +4,15 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="1.081">
+           time="1.131">
   <properties />
-            <testcase name="loginAsBankManager" time="1.081" classname="com.w2a.testcases.BankManagerLoginTest">
+            <testcase name="loginAsBankManager" time="1.131" classname="com.w2a.testcases.BankManagerLoginTest">
                 <failure type="java.lang.AssertionError"
                   message="Login not succesfull"
               >
 <![CDATA[java.lang.AssertionError: Login not succesfull
   org.testng.Assert.fail(Assert.java:96)
-  com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:21)
+  com.w2a.testcases.BankManagerLoginTest.loginAsBankManager(BankManagerLoginTest.java:22)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

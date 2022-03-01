@@ -37,7 +37,7 @@ public class AddCustomerTest extends TestBase {
 		Assert.assertTrue(alert.getText().contains(alertMessage), "Customer added successfully");
 		alert.accept();
 		
-		Assert.fail("Customer not added successfully");
+		//Assert.fail("Customer not added successfully");
 
 	}
 	
