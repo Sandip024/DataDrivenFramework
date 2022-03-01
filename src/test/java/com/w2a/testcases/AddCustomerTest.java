@@ -1,5 +1,7 @@
 package com.w2a.testcases;
 
+import java.util.Hashtable;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -15,29 +17,23 @@ import com.w2a.utilities.TestUtil;
 public class AddCustomerTest extends TestBase {
 	
 	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp")
-	public void addCustomerTest(String firstName, String lastName, String postCode, String alertText) throws InterruptedException {
+	public void addCustomerTest(Hashtable<String, String> data) throws InterruptedException {
+		
+		System.out.println(data.get("firstname"));
+		System.out.println(data.get("lastname"));
+		System.out.println(data.get("postcode"));
+		
 		
 		click("addCustBtn_XPATH");
-		type("firstname_XPATH", firstName);
-		type("lastname_XPATH", lastName);
-		type("postcode_XPATH", postCode);
+		type("firstname_XPATH", data.get("firstname"));
+		type("lastname_XPATH", data.get("lastname"));
+		type("postcode_XPATH", data.get("postcode"));
 		click("addbtn_XPATH");
-		/*
-		driver.findElement(By.xpath(OR.getProperty("addCustBtn"))).click();
-		driver.findElement(By.xpath(OR.getProperty("firstname"))).sendKeys(firstName);
-		driver.findElement(By.xpath(OR.getProperty("lastname"))).sendKeys(lastName);
-		driver.findElement(By.xpath(OR.getProperty("postcode"))).sendKeys(postCode);
-		driver.findElement(By.xpath(OR.getProperty("addbtn"))).click();
-		*/
-		String alertMessage = driver.switchTo().alert().getText();
-		Assert.assertTrue(alertMessage.contains(alertText));
-		//driver.switchTo().alert().dismiss();
-		
+
 		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-		Assert.assertTrue(alert.getText().contains(alertMessage), "Customer added successfully");
+		Assert.assertTrue(alert.getText().contains(data.get("alerttext")), "Customer added successfully");
 		alert.accept();
-		
-		//Assert.fail("Customer not added successfully");
+
 
 	}
 	
